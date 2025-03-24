@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #141E30, #243B55);
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    direction: rtl;
+}
+
+/* تصميم الـ Navbar */
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px ;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.container {
+    max-width: 500px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 90%;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: background 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background: #ffcc00;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e6b800;
+}
+
+/* جعل الجدول قابلاً للتمرير على الشاشات الصغيرة */
+.result-box {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* حتى لا يتقلص الجدول بشكل غير مناسب */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    white-space: nowrap; /* منع نزول النصوص في أسطر جديدة */
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+    th, td {
+        font-size: 14px; /* تقليل حجم الخط على الشاشات الصغيرة */
+        padding: 8px;
+    }
+}
+
+
+
+
+
+
+/* الفوتر */
+footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    direction: rtl;
+}
+
+footer span {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #ffcc00;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #fff;
+}
+
+/* تأثير الهوفار على الأيقونات */
+footer .social-icons a:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}

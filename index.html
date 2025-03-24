@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جيل الفرقان</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://i.ibb.co/JW1ZDJMV/476386009-122094333284772668-6629078256838958952-n-removebg-preview.png" alt="لوجو الشركة">
+                <span>جيل الفرقــــــان</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1> جيل الفرقــــــــان <i class="fa fa-quran"></i></h1>
+        <h1>ابحث عن اسمك في المسابقة</h1>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="اكتب اسمك هنا...">
+            <button onclick="searchData()"> بحث <i class="fa fa-search"></i></button>
+        </div>
+        <div id="result" class="result-box">
+            <!-- سيتم عرض النتائج هنا -->
+        </div>
+    </div>
+    
+            
+    <footer>
+        <p>© 2025 جميع الحقوق محفوظة لـ <span><a href="https://wa.me/+201027888008">Ziad Hagagy</a></span></p>
+        <div class="social-icons">
+            <p>للاستفسار وحل المشكلات</p>
+            <a href="https://wa.me/+201027888008">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/ZiadHassaann">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+    
+    
+    <!-- تضمين Firebase التقليدي -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+    <!-- تضمين السكربت الخاص بك -->
+    <script src="script.js"></script>
+</body>
+</html>
