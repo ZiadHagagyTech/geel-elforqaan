@@ -3,7 +3,7 @@
 body {
     font-family: 'Tajawal', sans-serif;
     text-align: center;
-    background: red;
+    background: linear-gradient(to right, #141E30, #243B55);
     color: white;
     margin: 0;
     display: flex;
